@@ -1,0 +1,12 @@
+I apologize that I haven't finished task 4.
+
+Some of the problems I experienced:
+
+1. Preprocessing the data takes a lot of time and I can't find a way to process the existing data optimally 
+(but I ended up making my own data format, but a new problem arose when implementing the algorithm)
+
+2. I chose the Shift-Reduce algorithm in working on this problem.
+The algorithm is simple but there is no single source that explains in detail how the classifier for selecting the shift/left/right step is formed.
+3. I was planning to use the perceptron to construct the classifier, but again, a problem arose. 
+By choosing a deterministic model, then I must know in advance the correct shift reduce steps (because it will be used as a label for the perceptron). 
+This becomes a deadlock with step 2.
