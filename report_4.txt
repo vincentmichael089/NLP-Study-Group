@@ -9,4 +9,10 @@ Some of the problems I experienced:
 The algorithm is simple but there is no single source that explains in detail how the classifier for selecting the shift/left/right step is formed.
 3. I was planning to use the perceptron to construct the classifier, but again, a problem arose. 
 By choosing a deterministic model, then I must know in advance the correct shift reduce steps (because it will be used as a label for the perceptron). 
-This becomes a deadlock with step 2.
+
+**UPDATE**
+I managed to reverse the algorithm in order to make features for the perceptron. 
+However, I experienced a weird behaviour when a word being reduced but there is still word that depend on that reduced word remaining.
+This problem mainly occured in a long sentence.
+I tried 2 versions of Shift-Reduce algorithm (Neubig-sensei's slide and Jordan Boyd-Graber's Video)to know why this problem occured, but I found no luck in debugging it.
+**UPDATE**
