@@ -1,18 +1,8 @@
-I apologize that I haven't finished task 4.
 
-Some of the problems I experienced:
-
-1. Preprocessing the data takes a lot of time and I can't find a way to process the existing data optimally 
-(but I ended up making my own data format, but a new problem arose when implementing the algorithm)
-
-2. I chose the Shift-Reduce algorithm in working on this problem.
-The algorithm is simple but there is no single source that explains in detail how the classifier for selecting the shift/left/right step is formed.
-3. I was planning to use the perceptron to construct the classifier, but again, a problem arose. 
-By choosing a deterministic model, then I must know in advance the correct shift reduce steps (because it will be used as a label for the perceptron). 
-
-**UPDATE**
-I managed to reverse the algorithm in order to make features for the perceptron. 
-However, I experienced a weird behaviour when a word being reduced but there is still word that depend on that reduced word remaining.
-This problem mainly occured in a long sentence.
-I tried 2 versions of Shift-Reduce algorithm (Neubig-sensei's slide and Jordan Boyd-Graber's Video)to know why this problem occured, but I found no luck in debugging it.
-**UPDATE**
+**UPDATE 2**
+I pointed out my mistake, now I can generate oracle data from the gold tree.
+I also added Perceptron from algorithm.
+Next to do:
+- transform the oracle data
+- create shift-reduce class
+**UPDATE2**
