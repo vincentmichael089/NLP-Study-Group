@@ -1,8 +1,0 @@
-
-**UPDATE 2**
-I pointed out my mistake, now I can generate oracle data from the gold tree.
-I also added Perceptron from algorithm.
-Next to do:
-- transform the oracle data
-- create shift-reduce class
-**UPDATE2**
